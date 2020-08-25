@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="2-simple-security:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/2_simple_security_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="2-simple-security" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:5.3.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:5.3.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:5.3.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.12" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="2-simple-security/web/Web" />
+    </root>
+  </artifact>
+</component>
