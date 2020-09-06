@@ -7,8 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="1-simple-session" />
+        <module name="3-spring-security-boot" />
         <module name="2-simple-security" />
+        <module name="3-spring-security-spring-boot" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="3-spring-security-boot" options="-parameters" />
+      <module name="3-spring-security-spring-boot" options="-parameters" />
+    </option>
   </component>
 </project>
