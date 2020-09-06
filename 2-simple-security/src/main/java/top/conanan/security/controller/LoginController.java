@@ -19,7 +19,7 @@ public class LoginController {
      */
     @PostMapping(value = "/login-success", produces = {"text/plain;charset=utf-8"})
     public String loginSuccess() {
-        return "登录成功";
+        return "登录成功 login-success";
     }
 
 

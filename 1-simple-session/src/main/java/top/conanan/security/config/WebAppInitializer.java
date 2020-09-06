@@ -1,16 +1,9 @@
 package top.conanan.security.config;
 
-import org.springframework.web.filter.CharacterEncodingFilter;
-import org.springframework.web.filter.FormContentFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import javax.servlet.Filter;
-import javax.servlet.FilterRegistration;
-import javax.servlet.ServletContext;
-import java.nio.charset.StandardCharsets;
-
 /**
- * 相当于 /webapp/WEB-INF/web.xml
+ * 相当于 /webapp/WEB-INF/web.xml，Spring 容器启动时会加载 WebApplicationInitializer 接口的所有实现类
  *
  * DispatcherServlet是Spring MVC的核心。在这里请求会第一次接触到框架，它主要负责将请求路由到其他的组件之中。
  * 按照传统的方式,像DispatcherServlet这样的Servlet会配置在web.xml文件中，这个文件会放到应用的WAR包里面。当然，这是配置DispatcherServlet的方法之一。

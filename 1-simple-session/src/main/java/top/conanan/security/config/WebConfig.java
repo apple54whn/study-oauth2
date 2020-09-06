@@ -59,6 +59,4 @@ public class WebConfig implements WebMvcConfigurer {
                 .excludePathPatterns("/", "/login", "/logout") // 放行登录等资源
                 .addPathPatterns("/r/**");// 其实这行写了后就不用再放行上面那些资源了
     }
-
-
 }

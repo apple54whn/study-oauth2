@@ -1,10 +1,9 @@
 package top.conanan.security.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-import top.conanan.security.security.WebSecurityConfig;
 
 /**
- * 相当于 /webapp/WEB-INF/web.xml
+ * 相当于 /webapp/WEB-INF/web.xml，Spring 容器启动时会加载 WebApplicationInitializer 接口的所有实现类
  * <p>
  * DispatcherServlet是Spring MVC的核心。在这里请求会第一次接触到框架，它主要负责将请求路由到其他的组件之中。
  * 按照传统的方式,像DispatcherServlet这样的Servlet会配置在web.xml文件中，这个文件会放到应用的WAR包里面。当然，这是配置DispatcherServlet的方法之一。
@@ -22,7 +21,7 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
      */
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[]{RootConfig.class, WebSecurityConfig.class};
+        return new Class[]{RootConfig.class};
     }
 
     /**

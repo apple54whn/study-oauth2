@@ -10,7 +10,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>1-simple-session</module>
-        <module>1-simple-session</module>
         <module>2-simple-security</module>
     </modules>
 
