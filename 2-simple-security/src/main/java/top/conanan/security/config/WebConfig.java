@@ -43,8 +43,8 @@ public class WebConfig implements WebMvcConfigurer {
      */
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        // /login 是跳转到 spring security 提供的登录页面，而不是自己的（不写成 redirect:/login 也行）
-        registry.addViewController("/").setViewName("/login");
+        // /login 是跳转到 spring security 提供的登录页面，而不是自己的（若不写成 redirect 则无法访问到，虽然其他的请求都可以拦截到登录页面，但是这个不行！必须写 redirect）
+        registry.addViewController("/").setViewName("redirect:/login");
     }
 
     // 不用手动配置拦截器，使用 Spring Security 的
